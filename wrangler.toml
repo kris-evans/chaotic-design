@@ -1,0 +1,10 @@
+name = "chaotic-design"
+type = "webpack"
+account_id = "242676fc941b10ce3c60779f906dcc00"
+workers_dev = false
+routes = [ "*.chaoticdesign.io/", "chaoticdesign.io/*" ]
+zone_id = "363a12a81eba21740dd71ecb0152e7c1"
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"

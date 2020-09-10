@@ -1,3 +1,7 @@
+# Workers
+dist/
+workers-site/
+
 # Logs
 logs
 *.log
