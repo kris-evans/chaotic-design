@@ -1,0 +1,26 @@
+name: Deploy Staging
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Navigate to workspace
+        run: cd $GITHUB_WORKSPACE
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Install dependencies
+        run: npm install
+      - name: Build assets
+        run: npm run build
+      - name: Publish site
+        env:
+          USER: root # https://github.com/cloudflare/wrangler-action/issues/12
+        uses: cloudflare/wrangler-action@1.2.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          environment: staging
