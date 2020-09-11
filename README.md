@@ -2,7 +2,7 @@
 
 My personal website using Gatsby deployed with Wrangler as a Cloudflare Workers Site. 
 
-![Deploy Production](https://github.com/mkevanz/chaotic-design/workflows/Deploy%20Production/badge.svg)
+![Deploy Production](https://github.com/mkevanz/chaotic-design/workflows/Deploy%20Production/badge.svg)  ![Deploy Staging](https://github.com/mkevanz/chaotic-design/workflows/Deploy%20Staging/badge.svg)
 
 ## Getting started
 
