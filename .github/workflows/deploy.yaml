@@ -18,6 +18,8 @@ jobs:
       - name: Build assets
         run: npm run build
       - name: Publish site
+        env:
+          USER: root # https://github.com/cloudflare/wrangler-action/issues/12
         uses: cloudflare/wrangler-action@1.2.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
