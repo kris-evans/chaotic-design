@@ -1,0 +1,18 @@
+.chaotic .layout {
+  background: #fff;
+}
+
+.chaotic .content {
+  padding: 0 50px;
+  margin-top: 64px;
+}
+
+.chaotic .content-wrapper {
+  padding: 24px;
+  min-height: 700px;
+}
+
+.chaotic .footer {
+  text-align: center;
+  background: #fff;
+}

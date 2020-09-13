@@ -1,12 +1,10 @@
-import React from "react"
-
-import Layout from "../components/layout"
+import React from 'react'
+import ChaoticLayout from "../templates/layout"
 
 const Home = () => 
   (
-    <Layout>
-      <div>Hello world!</div>
-    </Layout>
+    <ChaoticLayout>
+    </ChaoticLayout>
   )
 
 export default Home
