@@ -35,5 +35,8 @@ module.exports = {
     `gatsby-plugin-offline`,
     // For generating page metadata for search engines
     `gatsby-plugin-react-helmet`,
+    // Fixes issue where page not showing on mobile. 
+    //   Issue: https://github.com/gatsbyjs/gatsby/issues/13410
+    `gatsby-plugin-remove-serviceworker`
   ],
 }
